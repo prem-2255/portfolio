@@ -62,6 +62,23 @@ SKILLS = [
     ("Interests", "Cyber Security, System Architecture"),
 ]
 
+# Internship / job mile to yahan add karo. Khaali hai to resume me
+# "EXPERIENCE" section apne aap gayab rehta hai — kuch tootega nahi.
+# Format (# hatake, apni detail bharo):
+#
+# EXPERIENCE = [
+#     {
+#         "role": "Full-Stack Developer Intern",
+#         "org": "Company ka naam, Sheher",
+#         "when": "Jun 2026 - Aug 2026",
+#         "bullets": [
+#             "Kya banaya aur uska asar kya hua — number ho to zaroor likho.",
+#             "Doosra kaam.",
+#         ],
+#     },
+# ]
+EXPERIENCE = []
+
 PROJECTS = [
     {
         "name": "RentApp",
@@ -240,6 +257,32 @@ def build(out_path):
         story.append(
             Paragraph(f"<b>{label}:</b>&nbsp;&nbsp;{items}", s_body)
         )
+
+    # ── Experience ────────────────────────────────────────
+    # EXPERIENCE khaali hai to ye poora section skip ho jaata hai
+    if EXPERIENCE:
+        story += section("Experience")
+        for i, e in enumerate(EXPERIENCE):
+            if i:
+                story.append(Spacer(1, 6))
+            story.append(
+                Paragraph(f"<b>{e['role']}</b> &nbsp;—&nbsp; {e['org']}", s_proj)
+            )
+            story.append(Paragraph(e["when"], s_stack))
+            story.append(
+                ListFlowable(
+                    [
+                        ListItem(Paragraph(b, s_bullet), leftIndent=10)
+                        for b in e["bullets"]
+                    ],
+                    bulletType="bullet",
+                    start="•",
+                    bulletFontSize=9,
+                    bulletOffsetY=-1.5,
+                    leftIndent=9,
+                    spaceBefore=0.5,
+                )
+            )
 
     # ── Projects ──────────────────────────────────────────
     story += section("Projects")
