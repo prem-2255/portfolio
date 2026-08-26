@@ -1,7 +1,10 @@
-Apni resume PDF ko is folder me "resume.pdf" naam se daal do.
-Phir Hero section ka Resume button khud kaam karne lagega.
+Resume yahan aa gaya hai — resume.pdf
 
-Resume button nahi chahiye? -> src/data.js me `resume: null` kar do.
+Isko dobara banana ho (content badalne ke baad) to project folder me:
 
-(Ye .txt file delete kar sakte ho — ye sirf yaad dilane ke liye hai,
-kyunki khaali folder Git me push nahi hota.)
+    python3 resume/make_resume.py
+
+Wo script `resume/make_resume.py` ke andar CONTENT wale hisse se PDF banata hai
+aur seedha is folder me resume.pdf overwrite kar deta hai.
+
+Is txt file ki koi zaroorat nahi hai — chahe to delete kar do.
