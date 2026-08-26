@@ -37,6 +37,7 @@ TITLE = "Full-Stack Developer &amp; AI  |  BTech CSE (AI)"
 
 CONTACT = [
     ("premt8544@gmail.com", "mailto:premt8544@gmail.com"),
+    ("prem-2255.github.io/portfolio", "https://prem-2255.github.io/portfolio/"),
     ("github.com/prem-2255", "https://github.com/prem-2255"),
     (
         "linkedin.com/in/prem-tiwari-84ba85248",
@@ -45,16 +46,16 @@ CONTACT = [
 ]
 
 SUMMARY = (
-    "BTech CSE (AI) student with a Diploma in Information Technology, building "
-    "production-style full-stack applications and applied deep-learning systems. "
-    "Comfortable across React/TypeScript front-ends, Node.js and Express APIs with "
-    "Prisma, real-time Socket.io layers, and Docker-based delivery. Seeking "
-    "internships in full-stack development or AI/ML."
+    "BTech CSE (AI) student with a Diploma in Information Technology and a UI/UX "
+    "web design internship, building production-style full-stack applications and "
+    "applied deep-learning systems. Comfortable across React/TypeScript front-ends, "
+    "Node.js and Express APIs with Prisma, real-time Socket.io layers, and "
+    "Docker-based delivery. Seeking internships in full-stack development or AI/ML."
 )
 
 SKILLS = [
     ("Languages", "Python (Advanced), JavaScript, TypeScript"),
-    ("Frontend", "React, HTML, CSS, Vite"),
+    ("Frontend", "React, HTML, CSS, Vite, Responsive Design, UI/UX"),
     ("Backend", "Node.js, Express, REST APIs, Socket.io / WebSockets"),
     ("Databases", "Prisma ORM, PostgreSQL, SQLite, Database Design"),
     ("AI / ML", "TensorFlow/Keras, CNNs, Transfer Learning, OpenCV, Grad-CAM"),
@@ -77,7 +78,19 @@ SKILLS = [
 #         ],
 #     },
 # ]
-EXPERIENCE = []
+EXPERIENCE = [
+    {
+        "role": "Web Design (UI/UX) Intern",
+        "org": "Nirvana Tech, Vadodara",
+        "when": "Apr 2026 - May 2026  &#183;  5 weeks",
+        "bullets": [
+            "Designed and built responsive web page layouts, converting design "
+            "mockups into working HTML/CSS interfaces that held up across screen sizes.",
+            "Applied UI/UX fundamentals — visual hierarchy, typography, spacing and "
+            "consistent components — to improve clarity and usability of assigned pages.",
+        ],
+    },
+]
 
 PROJECTS = [
     {
@@ -117,15 +130,10 @@ PROJECTS = [
             "current market rates — built around sustainability and digital convenience.",
         ],
     },
-    {
-        "name": "Portfolio Website",
-        "subtitle": "Personal Branding",
-        "stack": "React, Vite, GitHub Actions",
-        "bullets": [
-            "Hand-coded portfolio deployed to GitHub Pages through an automated GitHub "
-            "Actions build-and-publish pipeline.",
-        ],
-    },
+    # NOTE: "Portfolio Website" project yahan se hata diya, kyunki uska link
+    # ab header wali contact line me hai (prem-2255.github.io/portfolio).
+    # Do jagah likhne se resume 2 page ho jaata tha. Wapas chahiye to ye
+    # comment hatake block add kar lo.
 ]
 
 EDUCATION = [
@@ -178,38 +186,38 @@ s_section = ParagraphStyle(
     fontSize=10.2,
     leading=12,
     textColor=INK,
-    spaceBefore=14,
+    spaceBefore=11,
     spaceAfter=1,
 )
 s_body = ParagraphStyle(
     "body",
     fontName="Helvetica",
-    fontSize=9.6,
-    leading=12.9,
+    fontSize=9.1,
+    leading=12.0,
     textColor=INK,
     alignment=TA_JUSTIFY,
 )
 s_proj = ParagraphStyle(
-    "proj", fontName="Helvetica", fontSize=10.1, leading=13, textColor=INK
+    "proj", fontName="Helvetica", fontSize=9.7, leading=12.4, textColor=INK
 )
 s_stack = ParagraphStyle(
     "stack",
     fontName="Helvetica-Oblique",
-    fontSize=8.9,
-    leading=11.2,
+    fontSize=8.6,
+    leading=10.8,
     textColor=MUTED,
     spaceAfter=1.5,
 )
 s_bullet = ParagraphStyle(
     "bullet",
     fontName="Helvetica",
-    fontSize=9.5,
-    leading=12.7,
+    fontSize=9.0,
+    leading=11.9,
     textColor=INK,
     alignment=TA_JUSTIFY,
 )
 s_edu = ParagraphStyle(
-    "edu", fontName="Helvetica", fontSize=9.7, leading=12.8, textColor=INK
+    "edu", fontName="Helvetica", fontSize=9.2, leading=12.0, textColor=INK
 )
 
 
