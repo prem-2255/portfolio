@@ -70,6 +70,7 @@ export const skills = [
     items: [
       { name: 'Node.js', level: 'Proficient' },
       { name: 'Express', level: 'Proficient' },
+      { name: 'FastAPI', level: 'Familiar' },
       { name: 'REST APIs', level: 'Proficient' },
       { name: 'Socket.io / WebSockets', level: 'Proficient' },
     ],
@@ -93,6 +94,7 @@ export const skills = [
   {
     category: 'AI / ML',
     items: [
+      { name: 'Google Gemini AI', level: 'Familiar' },
       { name: 'TensorFlow / Keras', level: 'Familiar' },
       { name: 'CNN & Transfer Learning', level: 'Familiar' },
       { name: 'OpenCV', level: 'Familiar' },
@@ -104,6 +106,24 @@ export const skills = [
 // Sabse strong project sabse upar rakha hai — recruiters pehla card
 // hi dhyaan se dekhte hain.
 export const projects = [
+  {
+    title: 'AI Study Helper',
+    subtitle: 'AI-Powered Learning & Interactive Simulation Platform',
+    description:
+      'A full-stack AI tutor that combines note and PDF summarization, MCQ quiz generation, YouTube lecture analysis, system failure simulations, visual logic building, and Socratic tutoring. Built with Gemini AI and hardened with JWT authentication, rate limiting, prompt-injection defenses, and magic-byte PDF validation.',
+    tech: [
+      'React 18',
+      'FastAPI',
+      'Python',
+      'Google Gemini AI',
+      'SQLite',
+      'JWT Auth',
+      'Tailwind CSS',
+    ],
+    live: null,
+    code: null,
+    featured: true,
+  },
   {
     title: 'RentApp',
     subtitle: 'Full-Stack PropTech & Rental Management Platform',

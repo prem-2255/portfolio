@@ -48,18 +48,19 @@ CONTACT = [
 SUMMARY = (
     "BTech CSE (AI) student with a Diploma in Information Technology and a UI/UX "
     "web design internship, building production-style full-stack applications and "
-    "applied deep-learning systems. Comfortable across React/TypeScript front-ends, "
-    "Node.js and Express APIs with Prisma, real-time Socket.io layers, and "
-    "Docker-based delivery. Seeking internships in full-stack development or AI/ML."
+    "AI-powered learning systems. Comfortable across React/TypeScript front-ends, "
+    "FastAPI and Node.js backends, Gemini AI integrations, real-time Socket.io "
+    "layers, and Docker-based delivery. Seeking internships in full-stack "
+    "development or AI/ML."
 )
 
 SKILLS = [
     ("Languages", "Python (Advanced), JavaScript, TypeScript"),
     ("Frontend", "React, HTML, CSS, Vite, Responsive Design, UI/UX"),
-    ("Backend", "Node.js, Express, REST APIs, Socket.io / WebSockets"),
+    ("Backend", "Node.js, Express, FastAPI, REST APIs, Socket.io / WebSockets"),
     ("Databases", "Prisma ORM, PostgreSQL, SQLite, Database Design"),
-    ("AI / ML", "TensorFlow/Keras, CNNs, Transfer Learning, OpenCV, Grad-CAM"),
-    ("Tools", "Docker &amp; Compose, Git &amp; GitHub, Streamlit, Third-party APIs"),
+    ("AI / ML", "Google Gemini AI, TensorFlow/Keras, CNNs, Transfer Learning, OpenCV, Grad-CAM"),
+    ("Tools", "Docker &amp; Compose, Git &amp; GitHub, Streamlit, JWT, Third-party APIs"),
     ("Interests", "Cyber Security, System Architecture"),
 ]
 
@@ -93,6 +94,19 @@ EXPERIENCE = [
 ]
 
 PROJECTS = [
+    {
+        "name": "AI Study Helper",
+        "subtitle": "AI-Powered Learning &amp; Interactive Simulation Platform",
+        "stack": "React 18, FastAPI, Python, Google Gemini AI, SQLite, JWT, Tailwind CSS",
+        "bullets": [
+            "Built a full-stack AI tutor with note/PDF summarization, concept simplification, "
+            "MCQ quiz generation, personalized study plans and Socratic tutoring.",
+            "Added a YouTube lecture analyzer plus interactive system-failure simulations "
+            "and a visual logic builder to support multi-modal, hands-on learning.",
+            "Hardened the application through a 12-point security audit covering JWT auth, "
+            "sliding-window rate limiting, prompt-injection defenses and magic-byte PDF validation.",
+        ],
+    },
     {
         "name": "RentApp",
         "subtitle": "Full-Stack PropTech &amp; Rental Management Platform",
